@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+// import Repositories from './repositories';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+  //aqui nós estamos renderizando a funcion App que foi criada no arquivo App.js. É assim que funciona a componentização. O ReactDOM, com o método render, é responsável por fazer isso.
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+  <App />,
+  //neste ponto nós escolhemos de onde vem o conteúdo que queremos renderizar, que no caso é a function App do arquivo App.js.
+
+  document.getElementById('root')
+  //e aqui nós indicamos onde iremos usar o "App". No caso, escolhemos o id='root' que está no index.html
+);
